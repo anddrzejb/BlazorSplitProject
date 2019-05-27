@@ -1,5 +1,5 @@
 ﻿@page "/"
-@namespace WebApplication1.Pages
+@namespace WebApplication1.App1.Pages
 @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 
 <!DOCTYPE html>
@@ -7,7 +7,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WebApplication1</title>
+    <title>WebApplication1.App1</title>
     <base href="~/" />
     <environment include="Development">
         <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" />
@@ -22,8 +22,7 @@
     <link href="css/site.css" rel="stylesheet" />
 </head>
 <body>
-    Base
-    <app>@(await Html.RenderComponentAsync<App>())</app>
+    <app>@(await Html.RenderComponentAsync<App1>())</app>
 
     <script src="_framework/blazor.server.js"></script>
 </body>

@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.0</TargetFramework>
@@ -6,7 +6,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\WebApplication1.App1\WebApplication1.App1.csproj" />
+    <None Remove="Pages\_Host.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Pages\_Host.txt" />
   </ItemGroup>
 
 </Project>

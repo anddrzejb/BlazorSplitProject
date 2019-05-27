@@ -8,9 +8,9 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using WebApplication1.Data;
+using WebApplication1.App1.Data;
 
-namespace WebApplication1
+namespace WebApplication1.App1
 {
     public class Startup
     {
@@ -44,12 +44,7 @@ namespace WebApplication1
 
             app.UseEndpoints(endpoints =>
             {
-                //endpoints.MapBlazorHub<App>("app");
-                //endpoints.MapBlazorHub<App1.App1>("app", "/_app1");
-
                 endpoints.MapBlazorHub();
-                endpoints.MapBlazorHub<App1.App1>("app", "/_app1");
-                endpoints.MapFallbackToPage("/_Host");
             });
         }
     }
