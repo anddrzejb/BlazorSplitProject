@@ -38,8 +38,8 @@ namespace WebApplication.App1
 
             app.UseEndpoints(endpoints =>
             {                
-                //endpoints.MapBlazorHub<App1>("app", "/app1");
-                endpoints.MapBlazorHub();
+                //endpoints.MapBlazorHub<App1>("app", "/app1");                
+                endpoints.MapBlazorHub();                
                 endpoints.MapFallbackToPage("/_Host");
             });
         }
