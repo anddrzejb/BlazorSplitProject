@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApplication1.App1", "..\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApplication1.App2", "..\WebApplication1.App2\WebApplication1.App2.csproj", "{0A90B2FB-3B50-4156-8938-102A9D7911CD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication.Shared", "..\Shared\WebApplication.Shared.csproj", "{73A285E4-688D-4BD4-AE3A-493EC278C5BC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication.Common", "..\Shared\WebApplication.Common.csproj", "{73A285E4-688D-4BD4-AE3A-493EC278C5BC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,9 +1,8 @@
-using Shared;
 using System;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace WebApplication.Shared
+namespace WebApplication.Common
 {
     public class WeatherForecastService: IWeatherForecastService
     {

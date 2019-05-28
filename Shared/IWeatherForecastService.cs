@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WebApplication.Shared
+namespace WebApplication.Common
 {
     public interface IWeatherForecastService
     {

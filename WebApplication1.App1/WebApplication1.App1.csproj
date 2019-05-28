@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Shared\WebApplication.Shared.csproj" />
+    <ProjectReference Include="..\Shared\WebApplication.Common.csproj" />
   </ItemGroup>
 
 </Project>
