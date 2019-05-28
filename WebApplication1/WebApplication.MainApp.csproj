@@ -7,8 +7,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Shared\WebApplication.Common.csproj" />
-    <ProjectReference Include="..\WebApplication1.App1\WebApplication1.App1.csproj" />
-    <ProjectReference Include="..\WebApplication1.App2\WebApplication1.App2.csproj" />
+    <ProjectReference Include="..\WebApplication1.App1\WebApplication.App1.csproj" />
+    <ProjectReference Include="..\WebApplication1.App2\WebApplication.App2.csproj" />
   </ItemGroup>
 
   <ItemGroup>

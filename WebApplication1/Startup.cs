@@ -4,7 +4,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using WebApplication.Common;
 
-namespace WebApplication1
+namespace WebApplication.MainApp
 {
     public class Startup
     {
@@ -44,7 +44,7 @@ namespace WebApplication1
                 //endpoints.MapBlazorHub<App1.App1>("app", "/_app1");
                 
                 endpoints.MapBlazorHub();
-                endpoints.MapBlazorHub<App1.App1>("app", "/app1");
+                endpoints.MapBlazorHub<App1.App1 >("app", "/app1");
                 endpoints.MapBlazorHub<App2.App2>("app", "/app2");
                 endpoints.MapFallbackToPage("/_Host");
             });

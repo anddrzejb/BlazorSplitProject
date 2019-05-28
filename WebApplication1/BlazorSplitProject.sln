@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.28922.388
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApplication1", "WebApplication1.csproj", "{717AD29C-B95D-4533-ADE7-3D1D7D610E79}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApplication.MainApp", "WebApplication.MainApp.csproj", "{717AD29C-B95D-4533-ADE7-3D1D7D610E79}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApplication1.App1", "..\WebApplication1.App1\WebApplication1.App1.csproj", "{73C3EE27-E4DE-460C-BE45-2576E4C4BE31}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApplication.App1", "..\WebApplication1.App1\WebApplication.App1.csproj", "{73C3EE27-E4DE-460C-BE45-2576E4C4BE31}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApplication1.App2", "..\WebApplication1.App2\WebApplication1.App2.csproj", "{0A90B2FB-3B50-4156-8938-102A9D7911CD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApplication.App2", "..\WebApplication1.App2\WebApplication.App2.csproj", "{0A90B2FB-3B50-4156-8938-102A9D7911CD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication.Common", "..\Shared\WebApplication.Common.csproj", "{73A285E4-688D-4BD4-AE3A-493EC278C5BC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApplication.Common", "..\Shared\WebApplication.Common.csproj", "{73A285E4-688D-4BD4-AE3A-493EC278C5BC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
