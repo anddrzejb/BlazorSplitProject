@@ -6,7 +6,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Shared\WebApplication.Shared.csproj" />
     <ProjectReference Include="..\WebApplication1.App1\WebApplication1.App1.csproj" />
+    <ProjectReference Include="..\WebApplication1.App2\WebApplication1.App2.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Data\" />
   </ItemGroup>
 
 </Project>

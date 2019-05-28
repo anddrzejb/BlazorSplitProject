@@ -8,9 +8,8 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using WebApplication.Shared;
 
-namespace WebApplication1
+namespace AppHost
 {
     public class Startup
     {
@@ -19,10 +18,7 @@ namespace WebApplication1
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddRazorPages();
-            services.AddServerSideBlazor();
-            services.AddSingleton<IWeatherForecastService, WeatherForecastService>();
-
-            //services.AddMvc(); 
+            services.AddServerSideBlazor();            
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -46,13 +42,9 @@ namespace WebApplication1
 
             app.UseEndpoints(endpoints =>
             {
-                //endpoints.MapBlazorHub<App>("app");
-                //endpoints.MapBlazorHub<App1.App1>("app", "/_app1");
-                
                 endpoints.MapBlazorHub();
-                endpoints.MapBlazorHub<App1.App1>("app", "/app1");
-                endpoints.MapBlazorHub<App2.App2>("app", "/app2");
-                endpoints.MapFallbackToPage("/_Host");
+                endpoints.MapBlazorHub<App1.Components.App>("app");
+                endpoints.MapRazorPages();
             });
         }
     }

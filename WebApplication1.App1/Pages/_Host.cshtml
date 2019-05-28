@@ -1,4 +1,5 @@
-﻿@page "/app1/{*clientPath}"
+﻿@page "/"
+@namespace WebApplication1.App1.Pages
 @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 
 <!DOCTYPE html>
@@ -6,8 +7,8 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WebApplication1.App1</title>
-    <base href="~/app1/" />
+    <title>WebApplication1</title>
+    <base href="~/" />
     <environment include="Development">
         <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" />
     </environment>
@@ -16,14 +17,14 @@
               asp-fallback-href="css/bootstrap/bootstrap.min.css"
               asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute"
               crossorigin="anonymous"
-              integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" />
+              integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"/>
     </environment>
     <link href="css/site.css" rel="stylesheet" />
 </head>
 <body>
-    App1
-    <app>@(await Html.RenderComponentAsync<WebApplication1.App1.App1>())</app>
+    Base
+    <app>@(await Html.RenderComponentAsync<App1>())</app>
 
-    <script src="~/app1.server.js"></script>
+    <script src="_framework/blazor.server.js"></script>
 </body>
 </html>

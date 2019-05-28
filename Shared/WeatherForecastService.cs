@@ -1,10 +1,11 @@
+using Shared;
 using System;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace WebApplication1.App1.Data
+namespace WebApplication.Shared
 {
-    public class WeatherForecastService
+    public class WeatherForecastService: IWeatherForecastService
     {
         private static string[] Summaries = new[]
         {
